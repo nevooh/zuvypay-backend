@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../config/db');
 const { protect } = require('../middleware/authMiddleware');
-const { generateP10EmployeeDetailsCsv } = require('../generators/p10Generator');
+const { generateP10EmployeeDetailsCsv } = require('../generators/P10Generator');
 const { resolveActivePeriodId } = require('../services/periodResolver');
 
 /**
